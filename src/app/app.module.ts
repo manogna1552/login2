@@ -1,10 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {NgModule} from "@angular/core";
+import { CommonModule } from '@angular/common';
 
 import { AppComponent } from './app.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { Routes, RouterModule } from '@angular/router';
 import { UserPageComponent } from './user-page/user-page.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,8 @@ import { UserPageComponent } from './user-page/user-page.component';
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot([{path : "",component:LoginPageComponent}])
+    RouterModule.forRoot([{path : "",component:LoginPageComponent}]),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
