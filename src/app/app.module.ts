@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 
 import { AppComponent } from './app.component';
 import { LoginPageComponent } from './login-page/login-page.component';
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { UserPageComponent } from './user-page/user-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -18,7 +18,7 @@ import { MyMaterialModule } from  './material.module';
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot([{path : "",component:LoginPageComponent}]),
+    RouterModule.forRoot([{path : "login", component : LoginPageComponent}]),
     BrowserAnimationsModule,
     MyMaterialModule
   ],
