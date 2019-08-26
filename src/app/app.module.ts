@@ -17,7 +17,7 @@ import { MyMaterialModule } from  './material.module';
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot([{path : "login", component : LoginPageComponent}]),
+    RouterModule.forRoot([{path : "login", component : LoginPageComponent},{path : "user", component : UserPageComponent}]),
     BrowserAnimationsModule,
     MyMaterialModule
   ],
