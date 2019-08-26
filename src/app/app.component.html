@@ -1,9 +1,7 @@
 <mat-toolbar color="primary">
     <mat-toolbar-row>
-      <!--  <span>HOME</span> -->
-       <span><a href="/">HOME</a></span>
-       <span class="spacer"></span>
-       <a mat-button [routerLink]="['/login']"  >LoginPage</a>
+       <a mat-button href="/" >HomePage</a>
+       <a mat-button [routerLink]="['/login']"  >LoginPage</a>     
     </mat-toolbar-row>
  </mat-toolbar>
  <router-outlet></router-outlet>
