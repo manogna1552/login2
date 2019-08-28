@@ -10,6 +10,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MyMaterialModule } from  './material.module';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     MyMaterialModule,
     MatSidenavModule,
     FlexLayoutModule,
+    HttpClientModule
 
   ],
   providers: [],
