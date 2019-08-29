@@ -33,9 +33,6 @@ export class AuthService {
       email1: email,
       password2 : password
     };
-<<<<<<< Updated upstream
-    return this.http.post(`http://httpbin.org/post`,postData).toPromise().then((data:any) => {
-=======
     return this.http.post(`https://my-json-server.typicode.com/techsithgit/json-faker-directory/profiles/`,postData)
     .subscribe((data:any)=>{console.log(data);
       console.log(data.email1);
@@ -50,11 +47,10 @@ export class AuthService {
   }
   
     //return this.http.post(`http://httpbin.org/post`,postData).toPromise().then((data:any) => {
->>>>>>> Stashed changes
       //console.log(data);
       //console.log(data.json.email1);
      // console.log(data.json.password1);
-  })
+  //})
    //subscribe(data=>{
     // console.log(data,"login data from server")})
 //    }
