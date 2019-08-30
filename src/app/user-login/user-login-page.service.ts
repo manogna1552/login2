@@ -1,13 +1,24 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
 import { Router } from '@angular/router';
+import { throwError } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UserLoginPageService {
 
-  
+  private handleError(errorResponse : HttpErrorResponse) {
+    //client side or server error
+    if(errorResponse.error instanceof ErrorEvent){
+      console.error("client side error",errorResponse.error.message);
+      alert("client side error,please try again");
+    }else {
+      console.error("Server side error",errorResponse);
+      alert("server side error,please try again");
+    }
+    return throwError('there is problem with service');
+  }
 
   constructor(private http : HttpClient, private router : Router) { }
 
@@ -30,6 +41,9 @@ export class UserLoginPageService {
                                        else {
                                           alert("Invalid credentials");
                                         }
+                                      },error =>{
+                                        console.log(error,'inside ......');
+                                        this.handleError(error);
                                       } )
                                     }
 }
