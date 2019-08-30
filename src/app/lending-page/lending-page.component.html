@@ -1,0 +1,47 @@
+
+<div>
+    <!-- <mat-toolbar color="white">
+            <mat-toolbar-row>
+                 <span class="spacer"></span>
+               <a mat-button href="#login`">Log In</a>
+               <a mat-button [routerLink]="['/login']"  >Register</a>     
+            </mat-toolbar-row>
+    </mat-toolbar>              -->
+    <app-horizontal-nav title="Login"></app-horizontal-nav>
+</div>
+
+<div class="bg" style="height: 100%">
+    
+</div>
+
+<div>
+  <a name="login"></a>
+      <mat-card>
+              <mat-card-title>Login</mat-card-title>
+              <mat-card-content>
+                <form>
+                    <p>  
+                    <mat-form-field class="full-width">
+                      <mat-label> <i class="fas fa-envelope fa-1x"> </i>  
+                          Email
+                      </mat-label>
+                      <input  matInput  placeholder="Email" [(ngModel)]="email" name="email" required>
+                    </mat-form-field>
+                    </p>
+        
+                    <p>
+                    <mat-form-field class="full-width">
+                      <mat-label> <i class="fas fa-key fa-1x"> </i> 
+                          Password
+                      </mat-label>
+                      <input  matInput  type = 'password' placeholder="Password" [(ngModel)]="password" name="password" required>
+                    </mat-form-field>
+                    </p> 
+        
+                </form>
+              </mat-card-content>
+              <mat-card-actions >
+                <button mat-raised-button (click)="login()" color="primary">LOGIN</button>
+              </mat-card-actions>
+        </mat-card>
+  </div>  

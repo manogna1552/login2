@@ -7,18 +7,20 @@ import { RouterModule } from '@angular/router';
 import { UserPageComponent } from './user-page/user-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSidenavModule } from '@angular/material/sidenav';
-import { MyMaterialModule } from  './material.module';
+import { MyMaterialModule } from './material.module';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import {HttpClientModule} from '@angular/common/http';
-
+import { LendingPageComponent } from './lending-page/lending-page.component';
+import { HorizontalNavModule } from './module/horizontal-nav/horizontal-nav.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginPageComponent,
     UserPageComponent,
-    DashboardComponent
+    DashboardComponent,
+    LendingPageComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +29,8 @@ import {HttpClientModule} from '@angular/common/http';
     MyMaterialModule,
     MatSidenavModule,
     FlexLayoutModule,
-    HttpClientModule
+    HttpClientModule,
+    HorizontalNavModule
 
   ],
   providers: [],
