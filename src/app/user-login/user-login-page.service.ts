@@ -36,7 +36,7 @@ export class UserLoginPageService {
                                        if(data.id == 4) {
                                         console.log(data.email1,"inside if");
                                           //this.router.navigate(["user", data.email1,data.id ]);
-                                          this.router.navigate(["user", JSON.stringify(data)]);
+                                          this.router.navigate(["user", JSON.stringify(data)],{skipLocationChange: true});
                                         } 
                                        else {
                                           alert("Invalid credentials");
