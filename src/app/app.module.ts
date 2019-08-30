@@ -23,7 +23,7 @@ import { UserLoginPageComponent } from './user-login/user-login-page/user-login-
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot([  {path : "user", component : UserPageComponent},
+    RouterModule.forRoot([  {path : "user/:data", component : UserPageComponent},
                             {path : "login", component : UserLoginPageComponent}]),
     BrowserAnimationsModule,
     MyMaterialModule,
